@@ -1,1 +1,38 @@
 /* write your override styles here */
+/* Hide specific graffiti tags with more specific selectors */
+
+/* Hide tag-1 within #wall */
+#wall .tag-1 {
+    display: none;
+  }
+  
+  /* Hide tag-2 within #wall */
+  #wall #tag-2 {
+    display: none;
+  }
+  
+  /* Hide tag-3 within #wall, with classes "slick" and "wicked" */
+  #wall .tag-3.slick.wicked {
+    display: none;
+  }
+  
+  /* Hide tag-4 within .parent (multiple instances) */
+  .parent #tag-4 {
+    display: none;
+  }
+  
+  /* Hide tag-5 within .parent with class "slick" */
+  .parent .slick #tag-5 {
+    display: none;
+  }
+  
+  /* Hide tag-6 within .parent > div > div */
+  .parent > div > div #tag-6 {
+    display: none;
+  }
+  
+  /* Hide tag-7 within .parent > div > div with class "slick" */
+  .parent > div > div .slick #tag-7 {
+    display: none;
+  }
+  
